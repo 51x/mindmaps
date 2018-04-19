@@ -1,7 +1,10 @@
 # Changelog
 
+## 2018-04-19
+- Added hostable directory without externally called JS and unethical services such as Google or Dropbox.
+
 ## 2012-06-24
-- Added integration with Dropbox and other cloud storage services (finally!)
+- Added integration with Dropbox and other cloud storage services (finally!) --> No.
 
 ## 2012-04-25
 - Added feature to set the branch color of all children to the parent's color
