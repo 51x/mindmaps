@@ -1,6 +1,8 @@
 # mindmaps
 mindmaps is a prototype of an HTML5 based mind mapping application. It lets you create neat looking mind maps in the browser.
 
+Host it yourself: copy the "hostable" folder to your web server and configure appcache as written below.
+
 ## HTML5 goodness
 - Written entirely in JavaScript
 - 100% offline capable thanks to ApplicationCache
@@ -13,12 +15,13 @@ mindmaps is a prototype of an HTML5 based mind mapping application. It lets you 
 The latest stable build is hosted [here](http://drichard.org/mindmaps).
 
 ## Build
+Beware: this will generate files that leak info through google analytics and includes some remote js files.
 * Run `npm run start` to launch a local dev server. The app will be hosted at [http://localhost:3000](http://localhost:3000).
 * Run `npm run build` to compile the production bundle. The artifacts will be located in `./bin`.
 
 
 ## Host yourself
-All you need is a web server for static files. Copy all files from /bin into your web directory and 
+All you need is a web server for static files. Copy all files from /hostable into your web directory and 
 launch the app with index.html.
 Make sure your web server serves .appcache files with the mime type `text/cache-manifest` for the application to
 be accessible offline.
